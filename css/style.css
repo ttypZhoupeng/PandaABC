@@ -1,0 +1,397 @@
+.content-width {
+  min-width: 980px;
+  max-width: 1200px;
+}
+header {
+  width: 100%;
+}
+header .top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 10;
+  transition: all 1s;
+}
+header .top nav {
+  min-width: 980px;
+  max-width: 1200px;
+  height: 65px;
+  line-height: 65px;
+  margin: 0 auto;
+}
+header .top nav .logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  display: inline-block;
+  height: 50px;
+  float: left;
+}
+header .top nav .main-nav {
+  float: right;
+}
+header .top nav .main-nav li {
+  float: left;
+  margin: 0 30px;
+}
+header .top nav .main-nav li a {
+  color: #fff;
+  font-size: 20px;
+}
+header .top nav .main-nav li a:hover {
+  color: #fcf065;
+}
+header .top nav .main-nav li .current {
+  color: #fcf065;
+}
+header .change-top {
+  background: #f8f8f8;
+}
+header .change-top nav .main-nav li a {
+  color: #666;
+}
+header .change-top nav .main-nav li a:hover {
+  color: #fc4640;
+}
+header .change-top nav .main-nav li .current {
+  color: #fc4640;
+}
+header .banner {
+  height: 700px;
+}
+header .banner .watchword {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 980px;
+  max-width: 1200px;
+  height: 165px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+header .banner .watchword h1 {
+  font-size: 75px;
+  font-weight: 500;
+}
+header .banner .watchword p {
+  margin: 40px 0;
+  font-size: 30px;
+  color: #e3e3e3;
+}
+footer {
+  background: #383838;
+}
+footer .appointment {
+  height: 70px;
+  line-height: 70px;
+  background: #fc4640;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+footer .appointment .button {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 60px;
+  padding: 0 40px;
+  border: 2px solid #fff;
+  font-size: 20px;
+  vertical-align: middle;
+  border-radius: 10px;
+  color: #fff;
+}
+footer .footer-content {
+  position: relative;
+  min-width: 980px;
+  max-width: 1200px;
+  margin: 80px auto;
+  color: #e3e3e3;
+}
+footer .footer-content > div {
+  display: inline-block;
+}
+footer .footer-content .logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 85px;
+  margin: auto 0;
+  float: left;
+}
+footer .footer-content .logo img {
+  height: 70px;
+  margin-bottom: 20px;
+}
+footer .footer-content .logo p {
+  font-size: 20px;
+}
+footer .footer-content h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+footer .footer-content .contact-us {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  width: 200px;
+}
+footer .footer-content .contact-us li {
+  line-height: 30px;
+  font-size: 20px;
+}
+footer .footer-content .appoint-address {
+  float: right;
+}
+footer .footer-content .appoint-address img {
+  width: 100px;
+}
+footer .copyright {
+  padding: 20px 0;
+  text-align: center;
+  color: #e3e3e3;
+  font-size: 16px;
+}
+header.index {
+  background: url('../images/banner.png') no-repeat;
+  background-size: cover;
+}
+header.index .banner .watchword h1 span {
+  color: #fcf065;
+}
+header.index .banner .watchword .button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #fc4640;
+  border-radius: 30px;
+  font-size: 30px;
+  color: #fff;
+}
+.container .image-text {
+  position: relative;
+}
+.container .image-text .describe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 60px;
+  margin: auto 0;
+}
+.container .image-text .describe h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.container .image-text .describe p {
+  width: 550px;
+  color: #666;
+  font-size: 25px;
+}
+.container .teacher {
+  background: #f7f7f7;
+}
+.container .teacher img {
+  float: left;
+  width: 40%;
+  margin: 80px 30px 0 20px;
+}
+.container .teacher .describe {
+  left: 50%;
+}
+.container .student {
+  background: #fff;
+}
+.container .student img {
+  float: right;
+  margin-top: 15px;
+  margin-right: 5%;
+  width: 25%;
+}
+.container .student .describe {
+  margin-left: 15%;
+}
+.container .panda .content {
+  min-width: 980px;
+  max-width: 1200px;
+  margin: 70px auto;
+}
+.container .panda .content .title {
+  margin-bottom: 70px;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+.container .panda-student {
+  background: #e8e8e8;
+}
+.container .panda-student .content .student-item {
+  float: left;
+  width: 30%;
+  margin-right: 50px;
+}
+.container .panda-student .content .student-item:last-child {
+  margin-right: 0;
+}
+.container .panda-student .content .student-item .photo {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+.container .panda-student .content .student-item .photo .photo-desc {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 105px;
+}
+.container .panda-student .content .student-item .photo .photo-desc .photo-desc-content {
+  margin: 20px 25px;
+  color: #fff;
+}
+.container .panda-student .content .student-item .photo .photo-desc .photo-desc-content h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.container .panda-student .content .student-item .photo .photo-desc .photo-desc-content p {
+  font-size: 16;
+}
+.container .panda-student .content .student-item .comment {
+  margin: 30px 0 0 40px;
+  line-height: 25px;
+}
+.container .panda-student .content .student-item .comment::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: -45px;
+  background: url('../images/quot.png');
+}
+.container .panda-student .content .Katie .photo {
+  background-image: url('../images/Katie.png');
+  background-size: cover;
+}
+.container .panda-student .content .David .photo {
+  background-image: url('../images/David.png');
+  background-size: cover;
+}
+.container .panda-student .content .Andy .photo {
+  background-image: url('../images/Andy.png');
+  background-size: cover;
+}
+.container .panda-abc .abc-main img {
+  float: left;
+  width: 50%;
+  margin-right: 80px;
+}
+.container .panda-abc .abc-main .desc {
+  float: left;
+}
+.container .panda-abc .abc-main .desc p {
+  margin-bottom: 40px;
+  line-height: 24px;
+}
+.container .panda-abc .abc-main .desc p:last-child {
+  margin-bottom: 0;
+}
+header.audition {
+  background: url('../images/banner-audi.png') no-repeat;
+  background-size: cover;
+}
+header.audition .watchword p {
+  display: inline-block;
+  width: 400px;
+}
+header.audition .watchword p:before,
+header.audition .watchword p::before {
+  content: '';
+  display: inline-block;
+  float: left;
+  width: 50px;
+  margin-top: 15px;
+  border-top: 2px solid #e3e3e3;
+}
+header.audition .watchword p:after,
+header.audition .watchword p::after {
+  content: '';
+  display: inline-block;
+  float: right;
+  width: 50px;
+  margin-top: 15px;
+  border-top: 2px solid #e3e3e3;
+}
+.container-audi .course-idea .idea-item {
+  float: left;
+  width: 30%;
+  margin-right: 50px;
+}
+.container-audi .course-idea .idea-item:last-child {
+  margin-right: 0;
+}
+.container-audi .course-idea .idea-item p {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 25px;
+  color: #333;
+}
+.container-audi .course-system {
+  background: #f5f7fb;
+}
+.container-audi .course-system img {
+  width: 100%;
+}
+.container-audi .course-design .design-content {
+  width: 800px;
+  margin: 0 auto;
+}
+.container-audi .course-design .design-content .design-item {
+  margin-bottom: 60px;
+}
+.container-audi .course-design .design-content .design-item img {
+  display: inline-block;
+  float: left;
+  margin-right: 40px;
+}
+.container-audi .course-design .design-content .design-item .design-disc {
+  position: relative;
+  float: right;
+  width: 400px;
+  height: 140px;
+  padding: 20px 30px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #f5f7fb;
+}
+.container-audi .course-design .design-content .design-item .design-disc .line {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  height: 70px;
+  border-left: 4px solid #f5f7fb;
+}
+.container-audi .course-design .design-content .design-item .design-disc em {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: red;
+}
+.container-audi .course-design .design-content .design-item .design-disc h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 400;
+}
+.container-audi .course-design .design-content .design-item .design-disc p {
+  line-height: 28px;
+  font-size: 20px;
+  color: #666;
+}

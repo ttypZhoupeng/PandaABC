@@ -1,0 +1,446 @@
+// common
+@main-red:#fc4640;
+@main-yellow:#fcf065;
+.content-width{
+    min-width:980px;
+    max-width:1200px;
+}
+header{
+    width:100%;
+    .top{
+        position: fixed;
+        top:0;
+        right:0;
+        left:0;
+        margin:0 auto;
+        z-index: 10;
+        transition:all 1s;
+        nav{
+            .content-width;
+            height:65px;
+            line-height:65px;
+            margin:0 auto;
+            .logo{
+                position: absolute;
+                top:0;
+                bottom:0;
+                margin:auto 0;
+                display: inline-block;
+                height:50px;
+                float:left;
+            }
+            .main-nav{
+                float:right;
+                li{
+                    float:left;
+                    margin:0 30px;
+                    a{
+                        color:#fff;
+                        font-size:20px;
+                        &:hover{
+                            color:@main-yellow;
+                        }
+                    }
+                    .current{
+                        color:@main-yellow;
+                    }
+                }
+            }
+        }
+    }
+    .change-top{
+        background:#f8f8f8;
+        nav{
+            .main-nav{
+                li{
+                    a{
+                        color:#666;
+                        &:hover{
+                            color:@main-red;
+                        }
+                    }
+                    .current{
+                        color:@main-red;
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+        height:700px;
+        .watchword{
+            position: absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            .content-width;
+            height:165px;
+            margin:auto;
+            text-align:center;
+            color:#fff;
+            h1{
+                font-size:75px;
+                font-weight: 500;   
+            }
+            p{
+                margin:40px 0;
+                font-size:30px;
+                color:#e3e3e3; 
+            }
+            
+        }
+    } 
+}
+
+footer{
+    background:#383838;
+    .appointment{
+        height:70px;
+        line-height:70px;
+        background:@main-red;
+        color:#fff;
+        text-align: center;
+        font-size: 30px;
+        .button{
+            display: inline-block;
+            height:40px;
+            line-height:40px;
+            margin-left:60px;
+            padding:0 40px;
+            border:2px solid #fff;
+            font-size:20px;
+            vertical-align: middle;
+            border-radius: 10px;
+            color:#fff;
+        }
+    }
+    .footer-content{
+        position: relative;
+        .content-width;
+        margin:80px auto;
+        color:#e3e3e3;
+        >div{
+            display:inline-block;
+        }
+        .logo{
+            position: absolute;
+            top:0;
+            bottom:0;
+            height:85px;
+            margin:auto 0;
+            float:left;
+            img{
+                height:70px;
+                margin-bottom:20px;
+            }
+            p{
+                font-size:20px;
+            }
+        }
+        h3{
+            font-size:25px;
+            font-weight: 400;
+            margin-bottom:20px;
+        }
+        .contact-us{
+            position: absolute;
+            left:50%;
+            margin-left:-50px;
+            width:200px;
+            li{
+                line-height: 30px;
+                font-size:20px;
+            }
+        }
+        .appoint-address{
+            float:right;
+            img{
+                width:100px;
+            }
+        }
+    }
+    .copyright{
+        padding:20px 0;
+        text-align:center;
+        color:#e3e3e3;
+        font-size:16px;
+    }
+}
+
+// 首页 index
+header.index{
+    background:url('../images/banner.png') no-repeat;    
+    background-size:cover;
+    .banner{
+        .watchword{
+            h1{
+                span{
+                    color:#fcf065;
+                }
+            }
+            .button{
+                display:inline-block;
+                padding:15px 40px;
+                background:@main-red;
+                border-radius: 30px;
+                font-size:30px;
+                color:#fff;
+            }
+        }
+    }
+
+}
+.container{
+    // student&teacher section
+    .image-text{
+        position: relative;
+        .describe{
+            position: absolute;
+            top:0;
+            bottom:0;
+            height:60px;
+            margin:auto 0;  
+            h2{
+                margin-bottom:20px;
+                font-size:40px;
+            }
+            p{
+                width:550px;
+                color:#666;
+                font-size:25px;
+            }
+        }
+    }
+    .teacher{  
+        background:#f7f7f7;
+        img{
+            float:left;
+            width:40%;
+            margin:80px 30px 0 20px;
+        }
+        .describe{
+            left:50%;   
+        }
+    }
+    .student{
+        background:#fff;
+        img{
+            float:right;
+            margin-top:15px;
+            margin-right:5%;
+            width:25%;
+        }
+        .describe{
+            margin-left:15%;
+        }
+    }
+
+    // panda-student section
+    .panda{
+        .content{
+            .content-width;
+            margin:70px auto;
+            .title{
+                margin-bottom:70px;
+                font-size:35px;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+    }
+    .panda-student{
+        background:#e8e8e8;
+        .content{
+            .student-item{
+                float:left;
+                width:30%;
+                margin-right:50px;
+                &:last-child{
+                    margin-right:0;     
+                }
+                .photo{
+                    position: relative;
+                    width:100%;
+                    height:350px;
+                    .photo-desc{
+                        position: absolute;
+                        bottom:0;
+                        width:100%;
+                        height:105px;
+                        .photo-desc-content{
+                            margin:20px 25px;
+                            color:#fff;
+                            h1{
+                                font-size:30px;
+                                font-weight: 500;
+                                margin-bottom:10px;
+                            }
+                            p{
+                                font-size:16
+                            }
+                        }
+                    }
+                }
+                .comment{
+                    margin:30px 0 0 40px;
+                    line-height:25px;
+                    &::before{
+                        content:'';
+                        display: block;
+                        width:40px;
+                        height:40px;
+                        margin-left:-45px;
+                        background:url('../images/quot.png');
+                    }
+                }
+            }
+            .Katie{
+                .photo{
+                    background-image: url('../images/Katie.png');
+                    background-size:cover;                    
+                }
+            }
+            .David{
+                .photo{
+                    background-image:url('../images/David.png');
+                    background-size:cover;                    
+                }
+            }
+            .Andy{
+                .photo{
+                    background-image: url('../images/Andy.png');
+                    background-size:cover;
+                }
+            }
+        }
+    }
+
+    // excellent-case section
+    .panda-abc{
+        .abc-main{
+            img{
+                float:left;
+                width:50%;
+                margin-right:80px;
+            }
+            .desc{
+                float:left;
+                p{
+                    margin-bottom:40px;
+                    line-height: 24px;
+                    &:last-child{
+                        margin-bottom:0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// 预约试听 audition
+header.audition{
+    background:url('../images/banner-audi.png') no-repeat;    
+    background-size:cover;
+    .watchword{
+        p{
+            display: inline-block;
+            width:400px;
+            &:before,&::before{
+                content:'';
+                display: inline-block;
+                float:left;
+                width:50px;
+                margin-top:15px;
+                border-top:2px solid #e3e3e3;
+            }
+            &:after,&::after{
+                content:'';
+                display: inline-block;
+                float:right;
+                width:50px;
+                margin-top:15px;
+                border-top:2px solid #e3e3e3;
+            }
+        }
+    }
+}
+
+.container-audi{
+    .course-idea{
+        .idea-item{
+            float:left;
+            width:30%;
+            margin-right:50px;
+            &:last-child{
+                margin-right:0;     
+            }
+            p{
+                margin-top:40px;
+                text-align: center;
+                font-size:25px;
+                color:#333;
+            }
+        }
+    }
+    .course-system{
+        background:#f5f7fb;
+        img{
+            width:100%;
+        }
+    }
+    .course-design{
+        .design-content{
+            width:800px;
+            margin:0 auto;
+            .design-item{
+                margin-bottom:60px;
+                img{
+                    display: inline-block;
+                    float:left;
+                    margin-right:40px;
+                }
+                .design-disc{
+                    position:relative;
+                    float:right;
+                    width:400px;
+                    height:140px;
+                    padding:20px 30px;
+                    border-top-right-radius:25px;
+                    border-bottom-right-radius:25px;
+                    background-color:#f5f7fb;
+                    .line{
+                        position: absolute;
+                        top:-70px;
+                        left:0;
+                        height:70px;
+                        border-left:4px solid #f5f7fb;
+                    }
+                    em{
+                        position: absolute;
+                        top:-15px;
+                        left:-15px;
+                        display:block;
+                        width:35px;
+                        height:35px;
+                        border-radius: 50%;
+                        background:red;
+                    }
+                    h3{
+                        margin-bottom:20px;
+                        font-size:25px;
+                        font-weight: 400;
+                    }
+                    p{
+                        line-height:28px;
+                        font-size:20px; 
+                        color:#666;
+                    }
+                }
+            }
+        }
+    }
+}
+
