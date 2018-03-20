@@ -1,13 +1,17 @@
 // common
 @main-red:#fc4640;
 @main-yellow:#fcf065;
-@main-bg:#f5f7fb;
+@main-bg:#f7f7f7;
 .content-width{
     min-width:980px;
     max-width:1200px;
 }
 header{
-    width:100%;
+    position: relative;
+    .banner{
+        width:100%;
+        vertical-align: bottom;
+    }
     .top{
         position: fixed;
         top:0;
@@ -38,6 +42,7 @@ header{
                     a{
                         color:#fff;
                         font-size:20px;
+                        font-weight: 400;
                         &:hover{
                             color:@main-yellow;
                         }
@@ -67,31 +72,31 @@ header{
             }
         }
     }
-    .banner{
-        height:700px;
-        .watchword{
-            position: absolute;
-            top:0;
-            right:0;
-            bottom:0;
-            left:0;
-            .content-width;
-            height:165px;
-            margin:auto;
-            text-align:center;
-            color:#fff;
-            h1{
-                font-size:75px;
-                font-weight: 500;   
-            }
-            p{
-                margin:40px 0;
-                font-size:30px;
-                color:#e3e3e3; 
-            }
-            
+    .watchword{
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        .content-width;
+        height:165px;
+        margin:auto;
+        text-align:center;
+        color:#fff;
+        h1{
+            font-size:75px;
+            font-weight: 500;   
+            text-align: center;
         }
-    } 
+        p{
+            margin:40px 0;
+            font-size:30px;
+            font-weight:400;
+            color:#fff; 
+            text-align: center;
+        }
+        
+    }
 }
 
 footer{
@@ -103,6 +108,7 @@ footer{
         color:#fff;
         text-align: center;
         font-size: 30px;
+        font-weight:400;
         .button{
             display: inline-block;
             height:40px;
@@ -120,7 +126,7 @@ footer{
         position: relative;
         .content-width;
         margin:80px auto;
-        color:#e3e3e3;
+        color:#fff;
         >div{
             display:inline-block;
         }
@@ -136,22 +142,27 @@ footer{
                 margin-bottom:20px;
             }
             p{
-                font-size:20px;
+                font-size:16px;
+                font-weight:400;
+                color:#c3c3c3;
             }
         }
         h3{
-            font-size:25px;
+            font-size:20px;
             font-weight: 400;
             margin-bottom:20px;
+            color:#fff;
         }
         .contact-us{
             position: absolute;
             left:50%;
             margin-left:-50px;
-            width:200px;
+
             li{
                 line-height: 30px;
-                font-size:20px;
+                font-size:16px;
+                font-weight:400;
+                color:#999;
             }
         }
         .appoint-address{
@@ -164,8 +175,8 @@ footer{
     .copyright{
         padding:20px 0;
         text-align:center;
-        color:#e3e3e3;
-        font-size:16px;
+        color:silver;
+        font-size:14px;
     }
 }
 
@@ -179,15 +190,48 @@ footer{
     width:100%;
     height:100%;
     background:rgba(0, 0, 0, 0.6);
-    img{
+    .content{
         position: fixed;
-        top:50px;
+        top:0;
         right:0;
         bottom:0;
         left:0;
         width:50%;
-        margin:auto;
+        height:70%;
+        margin: auto; 
+        p{
+            position: absolute;
+            top:40%;
+            right:0;
+            left:12%;
+            width:25%;
+            margin:0 auto;  
+            color:#fff;
+            font-size:14px;
+        }
+        .modal-bg{
+            width:100%;
+        }
+        .modal-code{
+            position: absolute;
+            top:50%;
+            right:0;
+            left:7%;
+            width:20%;
+            margin:0 auto;
+        }
+        em{
+            display: block;
+            width:35px;
+            height:35px;
+            position: absolute;
+            top:0;
+            right:0;
+            background:url('../images/close.png');
+            background-size:cover;
+        }
     }
+    
 }
 
 // 三栏图文
@@ -202,31 +246,28 @@ footer{
 
 // 首页 index
 header.index{
-    background:url('../images/banner.png') no-repeat;    
-    background-size:cover;
-    .banner{
-        .watchword{
-            h1{
-                span{
-                    color:#fcf065;
-                }
-            }
-            .button{
-                display:inline-block;
-                padding:15px 40px;
-                background:@main-red;
-                border-radius: 30px;
-                font-size:30px;
-                color:#fff;
+    .watchword{
+        h1{
+            span{
+                color:#fcf065;
             }
         }
-    }
-
+        .button{
+            display:inline-block;
+            padding:15px 40px;
+            background:@main-red;
+            border-radius: 30px;
+            font-size:30px;
+            font-weight:400;
+            color:#fff;
+        }
+    }   
 }
 .container{
     // student&teacher section
     .image-text{
         position: relative;
+        height:670px;
         .describe{
             position: absolute;
             top:0;
@@ -241,31 +282,39 @@ header.index{
                 width:550px;
                 color:#666;
                 font-size:25px;
+                font-weight:400;
+                line-height:35px;
             }
         }
     }
     .teacher{  
         background:#f7f7f7;
-        img{
-            float:left;
-            width:40%;
-            margin:80px 30px 0 20px;
+        height:570px;
+        .main{
+            .content-width;
+            margin:0 auto;
+            img{
+                float:left;
+                width:100%;
+                margin:0px 30px 0 -120px;
+            }
+            .describe{
+                left:57%;   
+            }
         }
-        .describe{
-            left:50%;   
-        }
+        
     }
     .student{
         background:#fff;
-        img{
-            float:right;
-            margin-top:15px;
-            margin-right:5%;
-            width:25%;
+        .main{
+            .content-width;
+            margin:0 auto;
+            img{
+                float:right;
+                margin-top:-130px;
+            }
         }
-        .describe{
-            margin-left:15%;
-        }
+        
     }
 
     // panda-student section
@@ -282,7 +331,7 @@ header.index{
         }
     }
     .panda-student{
-        background:#e8e8e8;
+        background:#f7f7f7;
         .content{
             .student-item{
                 .three-bar;
@@ -315,9 +364,9 @@ header.index{
                     &::before{
                         content:'';
                         display: block;
-                        width:40px;
+                        width:48px;
                         height:40px;
-                        margin-left:-45px;
+                        margin-left:-40px;
                         background:url('../images/quot.png');
                     }
                 }
@@ -369,8 +418,6 @@ header.index{
 
 // 课程体系 course
 header.course{
-    background:url('../images/banner-audi.png') no-repeat;    
-    background-size:cover;
     .watchword{
         p{
             display: inline-block;
@@ -403,6 +450,7 @@ header.course{
                 margin-top:40px;
                 text-align: center;
                 font-size:25px;
+                
                 color:#333;
             }
         }
@@ -459,6 +507,8 @@ header.course{
                         line-height:28px;
                         font-size:20px; 
                         color:#666;
+                        word-break:normal;
+                        word-wrap:break-word;
                     }
                 }
             }
@@ -470,8 +520,6 @@ header.course{
 
 //  外教师资 
 header.teacher{
-    background:url('../images/banner3.png') no-repeat;
-    background-size:cover;
     .watchword{
         .line{
             width:45px;
@@ -485,6 +533,9 @@ header.teacher{
 }
 .container-teacher{
     .outstand{
+        .swiper-container{
+            height:500px;   
+        }
         .swiper-slide{
             position: relative;
             height:450px;
@@ -508,6 +559,12 @@ header.teacher{
                 font-size:14px;
                 line-height:20px;
             }
+        }
+        .swiper-slide2{
+            p{
+                height:10%;
+            }
+            
         }
         .swiper-slide-active{
             transform: scale(2.0);

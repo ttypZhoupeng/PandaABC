@@ -8,6 +8,7 @@ $(function(){
             $('header .top').removeClass('change-top');
         }
     })
+    
 
     // 二位码弹出
     $('.button').click(function(){
@@ -16,6 +17,10 @@ $(function(){
     $('.modal').click(function(){
         $(this).fadeOut(800);
     })
+
+    // wow 动画
+    new WOW().init();
+
 
     // swiper 轮播
     var swiper = new Swiper('.swiper-container', {
@@ -34,5 +39,7 @@ $(function(){
             spaceBetween: 10
           }
         }
-      });   
+    });   
+
+    
 })
